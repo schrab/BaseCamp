@@ -1,0 +1,168 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "albumName",
+						"type": "string"
+					}
+				],
+				"name": "NotApproved",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_albumName",
+						"type": "string"
+					}
+				],
+				"name": "addRecord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getApprovedRecords",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getUserFavorites",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetUserFavorites",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "userFavorites",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract to manage a list of approved music records and allow users to add them to their favorites",
+			"kind": "dev",
+			"methods": {
+				"addRecord(string)": {
+					"details": "Adds an approved record to the user's favorites",
+					"params": {
+						"_albumName": "The name of the album to be added"
+					}
+				},
+				"constructor": {
+					"details": "Constructor that initializes the approved records list"
+				},
+				"getApprovedRecords()": {
+					"details": "Returns the list of approved records",
+					"returns": {
+						"_0": "An array of approved record names"
+					}
+				},
+				"getUserFavorites(address)": {
+					"details": "Returns the list of a user's favorite records",
+					"params": {
+						"_address": "The address of the user"
+					},
+					"returns": {
+						"_0": "An array of user's favorite record names"
+					}
+				},
+				"resetUserFavorites()": {
+					"details": "Resets the caller's list of favorite records"
+				}
+			},
+			"title": "FavoriteRecords",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/8_Mapping.sol": "Favorite_Records"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/8_Mapping.sol": {
+			"keccak256": "0xfa45aebdb244e9d71b0dae7fc901da5d0f0af235c61ba31f96b5c5eb1c47937e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30c5a46e9ec66eb653107fc9da546e0d7176e801581248a7d929028d87e6fa5d",
+				"dweb:/ipfs/QmPpjuR9LbqozUbAqBbv47d1qaV4HN5A8Mqkwb4Xvez8pY"
+			]
+		}
+	},
+	"version": 1
+}
